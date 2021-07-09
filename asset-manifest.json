@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vk-mini-app/static/css/main.94d9d93e.chunk.css",
+    "main.js": "/vk-mini-app/static/js/main.2822f96c.chunk.js",
+    "main.js.map": "/vk-mini-app/static/js/main.2822f96c.chunk.js.map",
+    "runtime-main.js": "/vk-mini-app/static/js/runtime-main.cd2e7bb3.js",
+    "runtime-main.js.map": "/vk-mini-app/static/js/runtime-main.cd2e7bb3.js.map",
+    "static/css/2.a2ab3232.chunk.css": "/vk-mini-app/static/css/2.a2ab3232.chunk.css",
+    "static/js/2.2ef3ff81.chunk.js": "/vk-mini-app/static/js/2.2ef3ff81.chunk.js",
+    "static/js/2.2ef3ff81.chunk.js.map": "/vk-mini-app/static/js/2.2ef3ff81.chunk.js.map",
+    "index.html": "/vk-mini-app/index.html",
+    "static/css/2.a2ab3232.chunk.css.map": "/vk-mini-app/static/css/2.a2ab3232.chunk.css.map",
+    "static/css/main.94d9d93e.chunk.css.map": "/vk-mini-app/static/css/main.94d9d93e.chunk.css.map",
+    "static/js/2.2ef3ff81.chunk.js.LICENSE.txt": "/vk-mini-app/static/js/2.2ef3ff81.chunk.js.LICENSE.txt",
+    "static/media/persik.ae9f0072.png": "/vk-mini-app/static/media/persik.ae9f0072.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd2e7bb3.js",
+    "static/css/2.a2ab3232.chunk.css",
+    "static/js/2.2ef3ff81.chunk.js",
+    "static/css/main.94d9d93e.chunk.css",
+    "static/js/main.2822f96c.chunk.js"
+  ]
+}
