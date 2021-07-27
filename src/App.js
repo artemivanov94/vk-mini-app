@@ -5,9 +5,9 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
+import Onboarding from './panels/Onboarding';
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(null);
 
@@ -27,17 +27,22 @@ const App = () => {
 		fetchData();
 	}, []);
 
-	const go = e => {
-		setActivePanel(e.currentTarget.dataset.to);
+	const setPanel = e => {
+		console.log('123',e.currentTarget.dataset.to)
+		// setActivePanel(e.currentTarget.dataset.to);
 	};
+
+	const getToken = () =>{ 
+		bridge.send("VKWebAppGetAuthToken", {"app_id": 7899315, "scope": "friends,status"}).then(data => { 
+		console.log(data);
+	  })
+	}
 
 	return (
 		<AdaptivityProvider>
-			<AppRoot>
-				<View activePanel={activePanel} popout={popout}>
-					<Home id='home' fetchedUser={fetchedUser} go={go} />
-					<Persik id='persik' go={go} />
-				</View>
+			<AppRoot> 
+					<Home id='home' fetchedUser={fetchedUser} setPanel={setPanel} getToken={getToken} />  
+				{/* <Onboarding id='onboarding'      /> */}
 			</AppRoot>
 		</AdaptivityProvider>
 	);
